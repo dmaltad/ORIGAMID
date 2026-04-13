@@ -1,0 +1,34 @@
+=============================================================================
+                  GUIA DE SOBREVIVÊNCIA EMMET - CHEATSHEET
+=============================================================================
+
+O Emmet transforma abreviações em blocos de código HTML completos.
+Digite a abreviação e aperte a tecla [TAB] ou [ENTER].
+
+--- 1. ESTRUTURA BÁSICA ---
+!           -> Cria a estrutura inicial do HTML5 (Boilerplate).
+>           -> FILHO: Coloca um elemento dentro do outro. (ex: ul>li)
++           -> IRMÃO: Coloca elementos lado a lado. (ex: h1+p)
+^           -> SUBIR: Sai de dentro do elemento atual. (ex: div>p^span)
+()          -> AGRUPAR: Isola lógicas. (ex: div>(header>nav)+main)
+
+--- 2. ATRIBUTOS, CLASSES E IDS ---
+#           -> ID. (ex: form#login -> <form id="login">)
+.           -> CLASSE. (ex: div.card -> <div class="card">)
+[attr]      -> ATRIBUTOS. (ex: input[type="email" required])
+
+--- 3. REPETIÇÃO E TEXTO ---
+* -> MULTIPLICAÇÃO. (ex: li*3 -> cria 3 listas)
+$           -> NUMERAÇÃO. (ex: item-$*3 -> item-1, item-2, item-3)
+{}          -> TEXTO. (ex: button{Enviar} -> <button>Enviar</button>)
+lorem       -> TEXTO FALSO. (ex: lorem10 -> gera 10 palavras aleatórias)
+
+--- 4. O "PURO SUCO" (Exemplo Avançado) ---
+ul.lista-tarefas>li.item-$*3>a{Tarefa $}
+Resultado:
+<ul class="lista-tarefas">
+    <li class="item-1"><a href="">Tarefa 1</a></li>
+    <li class="item-2"><a href="">Tarefa 2</a></li>
+    <li class="item-3"><a href="">Tarefa 3</a></li>
+</ul>
+=============================================================================

@@ -1,0 +1,61 @@
+/* Elementos começados por # indicam que são id's e elementos começando com . indicam que são classes */
+
+/* id's são usados para elementos únicos, não é possivel utilizar em mais de um elemento html */
+
+/* classes são reutilizaveis e é possivel em usar em vários elementos html diferentes */
+
+/* Com CSS é possivel selecionar vários elementos separando-os por vírgulas, e também é possivel selecionar um elemento dentro de outro, sempre os elementos mais externos da esquerda pra direita */
+
+/* BOX MODEL */
+/* Content define a largura inicial da caixa (salvo elementos de bloco) */
+/* Padding define a margem interna que separa o conteúdo da borda */
+/* Border define a borda para a caixa */
+/* Width define a largura para a caixa */
+/* Height define a altura para a caixa */
+
+/* DISPLAY INLINE E BLOCK*/
+/* Define como a caixa (box model) irá se comportar. */
+
+/* Inline - Respeita o fluxo da escrita sem iniciar uma nova linha, não é possível definir valores de width, height, margin (top/bottom) e etc. É o estilo padrão. */
+/* Block - Inicia uma nova linha e não permite que outros elementos sejam posicionados em sua linha. Aceita todas as propriedades do box model. Estilo inicial de elementos como h1, p, div e outros. */
+/* None - Remove o elemento completamente da tela. */
+/* Inline-Block - O elemento continua inline, mas passa a receber as propriedades do box model. */
+ 
+/* POSICIONAMENTO */
+/* Para posicionamentos complexos, como o da imagem abaixo, utilizamos as propriedades display grid (CSS Grid Layout) e flex (Flexbox). */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.foto {
+    width: 150px;
+}
+
+/* IMAGENS */
+/* Geralmente se é usando svg e png para marcas, icones, ilustrações ou imagens que tiverem somente uma cor. Preferencialmente svg pela flexibilidade de tamanho, não se usa jpg por não ter o fundo transparente. */
+/* NÃO USAR IMAGENS MAIORES QUE 1MB, 1MB é UM VALOR MUITO GRANDE PARA UMA IMAGEM. */
+
+/* div {
+    padding: top/bottom right/left;
+    margin: top right bottom left;
+}
+
+div {
+    padding: 20px 40px;
+    margin: 30px 100px 60px 200px;
+} */
+span {
+    display: inline-block;
+    background: #ddd;
+}
+
+span {
+    padding: 30px;
+    padding: 20px 40px;
+    padding: 100px 50px 100px 50px;
+    border: 10px solid black;
+    border-top: 10px solid blue;
+    border-width: 30px 40px 30px 40px;
+}

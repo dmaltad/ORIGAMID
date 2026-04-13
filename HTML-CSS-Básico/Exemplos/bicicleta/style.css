@@ -1,0 +1,26 @@
+/* id começa com # e classe começa com . */
+
+#introducao {
+    color: rgba(187, 178, 178, 0.76);
+    background-color: rgb(78, 39, 136);
+}
+
+.codigo {
+    color: blue;
+}
+
+.design {
+    color: red;
+}
+
+.azul {
+    color: blue;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.grande {
+    font-size: 32px;
+}
