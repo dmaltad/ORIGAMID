@@ -1,0 +1,34 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* place-content é um atalho para justify-content e align-content */
+    /* place-content: center; */
+    background: chocolate;
+    /* O "vh" em altura significa que está pegando a tela toda. */
+    /* height: 100vh; */
+}
+
+.grid {
+    margin-top: 60px;
+    display: grid;
+    gap: 20px;
+    /* A função minmax() é usada para definir um minimo e um màximo. Nesse contexto é usada para definir os tamanho minimos e maximos dos elementos do flexbox. */
+    /* O elemento auto-fit nesse contexto é usada para definir a quantidade de elementos que devem possuir em uma linha do flexbox */
+    grid-template-columns: repeat(auto-fit,minmax(150px, auto));
+}
+
+body {
+    margin: 0px;
+}
+
+h2 {
+    background: #e7e7e7;
+    border: 1px solid #d7d7d7;
+    padding: 20px;
+    margin: 0px;
+    flex: 1;
+
+}
+
+/* Quando o tamanho da tela é mudado o Flex adapta os itens de uma forma parecida como uma quebra de linha, enquanto o grid é adaptação um pouco mais rigida devido a existência de linhas e colunas, o grid se adapta respeitando essa estrutura. */
