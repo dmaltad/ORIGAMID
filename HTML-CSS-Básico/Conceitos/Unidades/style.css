@@ -1,0 +1,45 @@
+a {
+    text-decoration: none;
+    color: white;
+    background: darkblue;
+    display: inline-block;
+}
+
+p {
+    background: lightblue;
+}
+
+.px {
+    font-size: 24px;
+    padding: 16px 32px;
+}
+
+html {
+
+}
+/* A unidade de tamanho rem é baseada no tamanho padrão do navegador ou do html, é essencial para acessibilidade. Pois se mudarem o tamanho da fonte no navegador o rem se adapta de acordo */
+.rem {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+body {
+    margin: 0px;
+}
+/* As unidades vh e vw são usadas em relação a tela, enquanto a porcentagem é em relação ao elemento pai. vh é usado para o height que é a altura e vw é usado para o width que é a largura. */
+div {
+    background: lightblue;
+    height: 100vh;
+    width: 50vw;
+}
+
+div {
+    background: lightblue;
+    height: 100vh;
+    width: calc(100vw - 100px);
+}
+
+section {
+    width: 200px;
+    background: tomato;
+}
