@@ -1,0 +1,36 @@
+.bicicleta {
+    height: 600px;
+    /* width: 600px; */
+    background-color: lightblue;
+    background-image: url("./img/bicicleta.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    /* A propriedade background acaba sendo um atalho para todas as outras background seguindo a ordem de cor, imagem, repeat, size e position */
+    background: lightblue url("/img/bicicleta.jpg") no-repeat cover center top;
+    display: flex;
+}
+
+h1 {
+    margin: auto;
+    background: white;
+    padding: 0.75rem 1rem;
+}
+
+.pattern {
+    height: 300px;
+    background-color: lightcoral;
+    background-image: url("/img/pattern.svg");
+    background-repeat: repeat;
+    background-size: 500px;
+}
+
+.linear {
+    height: 200px;
+    background-image: linear-gradient(to right,lightgreen,lightseagreen,lightsalmon,lightcoral,lightpink);
+}
+
+.radial {
+    height: 200px;
+    background-image: radial-gradient(lightgreen,lightseagreen);
+}
