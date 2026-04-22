@@ -1,0 +1,52 @@
+/* Pseudos Elementos são usados para criação de elementos via css, geralmente usados mais para estilização */
+/* Muito importante que tenha um content no pseudo elemento, para que ele seja criado */
+
+/* h1::before {
+    content: "Antes ";
+}
+
+h1::after {
+    content: " Depois";
+} */
+
+h1::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: #caf;
+    /* margin-right: 10px; */
+    position: absolute;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+li::before{
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: linear-gradient(#caf, #fff);
+    border: 2px solid #caff;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+
+p::first-letter{
+    font-size: 2rem;
+    color: blue;
+}
+
+p::first-line{
+    font-weight: bold;
+}

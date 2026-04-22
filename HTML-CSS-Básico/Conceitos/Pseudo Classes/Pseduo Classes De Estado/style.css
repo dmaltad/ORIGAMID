@@ -1,0 +1,38 @@
+a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-family: Arial;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    background: #caf;
+    color: #217;
+    transition: 0.3s;
+}
+
+/* A pseudo classe hover, pode ser colocada em qualquer elemento */
+a:hover {
+    background: #adf;
+    color: #147;
+}
+
+/* A pseudo classe focus, só pode ser colocada somente em elementos que podem ser focados (navegados pelo tab), elementos em que o usuário consegue interagir */
+a:focus {
+    background: #cfa;
+    color: #371;
+    /* outline: ; */
+}
+
+/* Serve para quando um elemento é ativo, como por exemplo, quando um botão é clicado. */
+a:active {
+    background: #ffa;
+    color: #761;
+}
+
+/* Serve para links que já foram visitados/clicados */
+/* a:visited {
+    background: #fda;
+    color: #731;
+} */
+
+

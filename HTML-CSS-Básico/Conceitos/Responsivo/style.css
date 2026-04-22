@@ -1,0 +1,46 @@
+img {
+    max-width: 100%;
+    display: block;
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+h1 {
+    grid-column: 1 / -1;
+}
+
+@media (600px >= width) {
+    div {
+        grid-template-columns: 1fr;
+    }
+    img {
+        display: none;
+    }
+}
+
+@media ( width >= 1000px) {
+    html {
+        font-size: 150%;
+    }
+}
+
+@media (700px <= width <= 900px){
+    p {
+        background-color: lightskyblue;
+    }
+}
+
+
+/* O media screen serve para adicionar elementos que só iriam aparecer na tela, não irá aparecer na hora de imprimir */
+@media screen {
+
+}
+
+/* O media print serve para adicionar elementos que só iriam aparecer na hora de imprimir, não irá aparecer na tela normalmente */
+@media print {
+
+}
